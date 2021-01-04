@@ -7,8 +7,10 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
+const getNiceMsg = require('./js/get_nice_message')
+
 
 // start the Stimulus application
 // import './bootstrap';
 
-console.log("Hello world");
+console.log(getNiceMsg(4));
