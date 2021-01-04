@@ -1,0 +1,13 @@
+1.why encore?
+- to ease webpack integration.
+2.why webpack in 1st place ?
+- to compile different js files in a single script file or css, in order so that it can be executed.
+---------------------------------------------------------------------------------------------------
+-At start css and js files were not compiled and included traditionally,
+each file has its own script tag
+
+eg:
+<script src="{{ asset('js/admin_article_form.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/account.css') }}">
+----------------------------------------------------------------------------------------------------
+- although encore and webpack are node modules, will install them through composer

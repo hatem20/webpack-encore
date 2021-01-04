@@ -1,0 +1,3 @@
+- why to use `encore_entry_link_tags` and `encore_entry_script_tags` instead of just html tags?
+something related to multiple entry points and the mapping that happens in entrypoint.json
+- use watch mode by `encore dev --watch` or `yarn watch` and this is not magic, it happened by the recipe that put that alias in packages.json

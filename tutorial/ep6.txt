@@ -1,0 +1,5 @@
+- will refactor code so that it works without workarounds (remove global)
+- move jquery related code in app.js, but since the code relies on bootstrap, we need to install and import it.
+- bootstrap has a dependency (popper.js) but not installed as bootstrap dep, hence we need to manually install it (pear dependenct),
+but no need to import it as bootstrap will and also will use jquery as our jquery is not global,
+ but webpack is smart enough to load the same instance of jquery.

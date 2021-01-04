@@ -1,0 +1,15 @@
+starting point to learn about encore is webpack.config.js
+as we agreed encore is just a way to write webpack config easier
+for now we will only interact with 3 configs
+1.the output usually aka build dir
+2.public path (used by the web server)
+3.entry point (single js file app.js usually)
+-------------------------------------------
+when we run encore dev
+- (app.css and app.js) files created in public/build
+-------------------------------------------
+the full flow
+webpack looks at assets/js/app.js, then looks for all req and import stmts
+if found js file, it puts its content in the final js file, if css it puts the content in app.css
+---------------------------------------------
+now we have 2 files app.js and app.css, we need to add them to the html page

@@ -1,0 +1,10 @@
+the real power of webpack, is the ability to import or require js files.
+-------------------------------------------------------------------
+in js any file you want to use need to export something
+- we created file and imported this file in app.js using require keyword
+- .js postfix can be omitted in require
+- if the file should export more than single function use export default instead, hence will use import '' from
+- and you should use import as require is more node, while import is ecmascript.
+------------------------------------------------------------------
+we just organize our JavaScript without global variables, And that is no small thing.
+Heck, we could stop the tutorial right now, and you would still have this amazing superpower.

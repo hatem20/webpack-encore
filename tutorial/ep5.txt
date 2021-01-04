@@ -1,0 +1,6 @@
+- since we created a single entry point, each js and css file will be included in app.js even if we do not need this js code
+- will use encore to import external js and css files and also inline js files
+- let yarn/npm install third party libs for u. yarn add jquery, and since we need them during build, will add --dev
+- after installation, import it as any other js module, but it will be locally imoprted in this very file (app.js),
+and can not be used in your twig files, and this is true power of webpack to forget about globals,
+but to use it for legacy code you can use global key word, but better soln to refactor your code
