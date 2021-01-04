@@ -9,7 +9,8 @@
 import './styles/app.css';
 
 import getNiceMsg from './js/get_nice_message';
-
+import $ from 'jquery';
+global.$ = $;
 // start the Stimulus application
 // import './bootstrap';
 
