@@ -1,0 +1,13 @@
+code splitting
+--------------
+it is an optimizn technique
+- if we check out source code, will find 2 script tags (app.js, vendor~app.js), and this is a feature
+called (splitEntryChunks) can be enabled in webpack.config.js.
+- but isn't webpack already merge multiple js files so that we do not make tons of http requests,
+how can it be more efficient to split them again to multiple js files?
+- yes, and no, webpack extracts vendor files which are less likely to change and combine them into 1 or more file,
+also if files are big (30 kb) may be split, also they move shared modules in a file if the shared functionality is too big,
+but might not do so is it is easier to be duplicated in each file, and all these optimizations can be customized,
+and also wz css files
+-- one important
+- remember when we used encore_entry_link_tags and encore_entry_script_tags, these helps for import the vendor~app.js files
