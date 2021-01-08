@@ -1,6 +1,6 @@
 import Dropzone from 'dropzone';
 import 'dropzone/dist/dropzone.css';
-import './components/algolia-autocomplete.js';
+import autocomplete from './components/algolia-autocomplete.js';
 
 import Sortable from 'sortablejs';
 
@@ -9,6 +9,11 @@ Dropzone.autoDiscover = false;
 import $ from 'jquery';
 
 $(document).ready(function() {
+    const $autoComplete = $('.js-user-autocomplete');
+    if (!$autoComplete.is(':disabled')) {
+        autocomplete($autoComplete, 'users', 'email');
+    }
+
     const $referenceList = $('.js-reference-list');
     if ($referenceList[0]) {
         var referenceList = new ReferenceList($('.js-reference-list'));

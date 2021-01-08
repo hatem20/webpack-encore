@@ -1,0 +1,5 @@
+- we use another encore feature to solve jquery issue autoProvidejQuery, it rewire code with adding require jquery so that,
+the code to be fixed. it's some sort of hack to fix unwell written third party libs.
+- refactor algolia-autocomplete code so that it is written to be reusable code, instead of doing stuff just initialize
+it.
+- and now our public/js dir is empty and the nxt is to empty css dir also.
