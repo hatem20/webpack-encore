@@ -1,0 +1,11 @@
+- we want to delete images dir in public and let only single src of truth for images in assets, but
+in templates we include images. since `asset` fun reads from public, we need to make some changes.
+1-change images routes in all templates to point to build dir instead of public
+2-move images to assets.
+3-tell encore to copy files from assets to build dir.
+- as a bounce we can tweak it a little to take advantage of image versioning out of the box provided by encore.
+if we checked the build dir, will find manifest.json, this file is created during build
+and it has mapping betn files, its super useful with versioning as it point the file name to the exact versioned file
+- another feature called `cleanupOutputBeforeBuild`.
+- when we installed encore the recipe added assets.yaml config file which points to the manifest file we talked about,
+and this is helpful for asset function to read from
