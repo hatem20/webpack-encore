@@ -1,0 +1,19 @@
+this is important lesson
+------------------------
+- First part (entry isolation)
+try to use bootstrap fun in article show
+- the app entry point is loaded first with both jquery and bootstrap, then the article entrypoint which does not include bootstrap,
+you may think it will use the same jquery object which has been modified by bootstrap from the first entry point.
+but this is not correct entry points run in isolation.
+when 2 files import the same module, they get the same obj in memory(in the same entry point),
+however webpack treat every entry point in total isolation,
+---------------------------------------------------------
+-  The run time chunk
+this feature is related to the 1st part, as we disabled this earlier but if we enabled it it will share modules across
+all entry points, and this is not good or bad its something for you to be aware of.
+- if you enabled this, every entry will add new js file runtime.js a new file which should be included as 1st tag before any entry
+- why ?
+1) runtime.js contains webpack code (code needs to get its job done),
+and we are telling webpack instead of duplicating this code in every single entry just add it once.
+2) runtime.js contains the `manifest` => code that contains some internal ids that webpack uses to identify different parts of your code
+those ids often change betn builds, so by isolating that code, the other files (app.js) will change less often which is great for caching
