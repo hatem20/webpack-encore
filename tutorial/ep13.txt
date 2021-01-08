@@ -1,0 +1,3 @@
+- in the last episode, the add template was broken coz autocomplete.js depend on jqeury which is not global
+- note our code use the jquery extension not the standalone lib for autocomplete, so be careful.
+- when third party lib such as autocomplete uses jquery as global using `jQuery` we have an issue then, that will be solved nxt.

@@ -1,5 +1,6 @@
 import Dropzone from 'dropzone';
 import 'dropzone/dist/dropzone.css';
+import './components/algolia-autocomplete.js';
 
 import Sortable from 'sortablejs';
 
