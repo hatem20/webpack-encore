@@ -1,0 +1,6 @@
+- we have 2 css files to be moved away from public dir and no js file, this is tricky situn coz we webpack
+wants always to have js entry file, and if you want css, include it in entryfile, and this comes from SPA mindset
+- you have multiple options 1) just leave them there. 2) create js files that only includes css files.
+but encore encourage you to do it properly
+- add new encore config called 'addStyleEntry' and it's kind of hack as webpack create empty js file and encore
+deletes this file later
