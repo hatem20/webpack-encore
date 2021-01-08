@@ -1,0 +1,14 @@
+Importing 3rd Party CSS + Image Paths
+--------------------------------------
+- do the same wz css, replace bootstrap stylesheet with import
+- we add import stmt in app.js but, he prefers single css file per entry so will be added via import stmt in styles file
+- bootstrap.css is already imported wz import bootstrap we did earlier.
+ but how can we import it from modules in the file ?
+- we should add the path '~bootstrap/dist/css/bootstrap.css'
+=> note the tilda is special for css and webpack to know that import from node_module,
+- we can omit full path and only suffic with '~bootstrap', just like we did wz js, thanks to "main" key in package.json, it knows the path
+css works the same by "style" key but it is not standard yet. you can nit rely on it for every package
+- repeat last step wz fontawesome, works as expected + it adds fonts to public wz hash according to the content so that
+it caches and invalidate if changed, and update app.css file in public
+- will do the same with style.css, but it will be broken since import images in style.css
+is relatively so will move entire image dir inside assets
