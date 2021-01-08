@@ -1,0 +1,6 @@
+-to use sass instead of css rename file, change it in app.js,
+then you will find an error with a message on how you should've used css and that's another importance of encore.
+-limitation in ecore, you need to restart yarn watch to reload webpack if you change configs.
+-rearranged css files in a more elegant structure.
+-another cool feature of webpack it looks first for scss files for packages coz we enabled sass, and if it does not have,
+it then fallback to css file.
