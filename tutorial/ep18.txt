@@ -1,0 +1,2 @@
+-babel works fine with converting new syntax to old syntax, but for new js features we need polyfills,
+and encore(in configureBabel config) do this for us automatically based on browserslist
