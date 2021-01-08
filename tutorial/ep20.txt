@@ -1,0 +1,3 @@
+- will solve the issue related to including extra code (in create and edit) articles eg: autocomlete
+- you can import js/css async.
+- I will not implement it
