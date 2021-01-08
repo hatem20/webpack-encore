@@ -7,7 +7,7 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
-import getNiceMsg from './js/get_nice_message';
+import getNiceMsg from './js/components/get_nice_message';
 import $ from 'jquery';
 // global.$ = $;
 // start the Stimulus application

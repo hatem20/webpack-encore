@@ -1,0 +1,3 @@
+- the inner pages will crash coz jquery is not included globally, so refactor inner pages code so thet they include jquey,
+starting wz articles page
+
