@@ -1,0 +1,5 @@
+- in this episode we learn how to use babel for js backward compatibility, and postcss for different browsers support
+if u checked vendors~admin_article_form.js file you'll find babel rewrite out js code to be compatible wz older browsers,
+but you need to tell babel if u need to support older browsers or not.
+-apart from babel, in css we may not need webkit key word for new browsers, so there's some encore config we can count on to
+add this prefix for us when needed 'postCssLoader'
