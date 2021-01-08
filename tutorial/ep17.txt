@@ -1,0 +1,7 @@
+-if you searched for -webkit in css file before configuring postcss you can find a certain number, and changing the
+required supported browsers will affect this number.
+- how to change this ?
+in postcss.config.js? no
+- there's a lib called browserslist, and this is configured in packages.json.
+-check again no of occurrence of -webkit after changing this config.
+this also affect js output, eg: it may convert const to var based on the browserslist
